@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
     	//apikey=DAUM_SEARCH_DEMO_APIKEY&output=json&q=daum%20openapi
     	StringBuilder  builder = new StringBuilder();
     	builder.append("http://apis.daum.net/search/book?");
-    	builder.append("apikey=f146dfc358007a8b3531a652ec7baded66d89e1a&output=json&");
+    	builder.append("apikey=DAUM_SEARCH_DEMO_APIKEY&output=json&");
     	builder.append("q="+encodedK);
     	
     	jManager = new JSONManager(handler,builder.toString(),null);
@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
     	
 	    	StringBuilder  builder = new StringBuilder();
 	    	builder.append("http://apis.daum.net/search/book?");
-	    	builder.append("apikey=f146dfc358007a8b3531a652ec7baded66d89e1a&output=json&");
+	    	builder.append("apikey=DAUM_SEARCH_DEMO_APIKEY&output=json&");
 	    	builder.append("q="+encodedK+"&pageno="+page);
 	    	
 	    	jManager = new JSONManager(handler,builder.toString(),null);
